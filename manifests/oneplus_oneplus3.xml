@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--OnePlus 3 Project Treble repository-->
+    <remote name="op3treble" fetch="https://github.com/OP3Treble" revision="lineage-16.0" />
+
+
+    <!--OnePlus 3 device tree-->
+    <project path="device/oneplus/oneplus3" name="android_device_oneplus_oneplus3" remote="op3treble" revision="lineage-16.0" />
+    <!--Generic Oppo device tree-->
+    <project path="device/oppo/common" name="LineageOS/android_device_oppo_common" remote="github" />
+    <!--OnePlus3/MSM8996 android kernel-->
+    <project path="kernel/oneplus/msm8996" name="android_kernel_oneplus_msm8996" remote="op3treble" revision="lineage-16.0" />
+    <!--Proprietary OnePlus vendor blobs-->
+    <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" remote="github"  />
+</manifest>
