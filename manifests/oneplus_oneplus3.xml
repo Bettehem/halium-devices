@@ -7,7 +7,7 @@
 
 
     <!--OnePlus 3 Halium kernel with Waydroid support-->
-    <remote name="op3waydroid" fetch="https://gitlab.com/Bettehem"/>
+    <remote name="op3waydroid" fetch="https://github.com/Bettehem"/>
     <!--OnePlus 3 android device repo for halium-->
     <remote name="op3device" fetch="https://github.com/Bettehem"/>
     <!--OnePlus 3 oneplus vendor repo for halium-->
