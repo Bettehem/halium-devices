@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<!--OnePlus 3 Project Treble repository-->
-	<remote name="op3treble" fetch="https://github.com/OP3Treble" revision="lineage-16.0" />
-	<!--OnePlus 3 Halium repository-->
-	<remote name="op3halium" fetch="https://github.com/OP3-Halium" />
+    <!--OnePlus 3 Project Treble repository-->
+    <remote name="op3treble" fetch="https://github.com/OP3Treble" revision="lineage-16.0" />
+    <!--OnePlus 3 Halium repository-->
+    <remote name="op3halium" fetch="https://github.com/OP3-Halium" />
 
 
-	<!--OnePlus 3 device tree-->
-	<project path="device/oneplus/oneplus3" name="android_device_oneplus_oneplus3" remote="op3halium" revision="lineage-16.0" />
-	<!--Generic Oppo device tree-->
-	<project path="device/oppo/common" name="LineageOS/android_device_oppo_common" remote="github" revision="lineage-16.0" />
-	<!--OnePlus3/MSM8996 android kernel-->
-	<project path="kernel/oneplus/msm8996" name="android_kernel_oneplus_msm8996" remote="op3halium" revision="halium-9.0" />
-	<!--Proprietary OnePlus vendor blobs-->
-	<project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="op3treble" revision="lineage-16.0" />
+    <!--OnePlus 3 Halium kernel with Waydroid support-->
+    <remote name="op3waydroid" fetch="https://gitlab.com/Bettehem"/>
+    <!--OnePlus 3 android device repo for halium-->
+    <remote name="op3device" fetch="https://github.com/Bettehem"/>
+    <!--OnePlus 3 oneplus vendor repo for halium-->
+    <remote name="op3vendor" fetch="https://github.com/Bettehem"/>
+
+
+    <!--OnePlus 3 device tree-->
+    <project path="device/oneplus/oneplus3" name="android_device_oneplus_oneplus3" remote="op3device" revision="Halium_9.0_GSI" />
+    <!--Generic Oppo device tree-->
+    <project path="device/oppo/common" name="LineageOS/android_device_oppo_common" remote="github" revision="lineage-16.0" />
+    <!--OnePlus3/MSM8996 android kernel-->
+    <project path="kernel/oneplus/msm8996" name="android_kernel_oneplus_msm8996" remote="op3waydroid" revision="Halium_9.0_GSI" />
+    <!--Proprietary OnePlus vendor blobs-->
+    <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="op3vendor" revision="lineage-16.0" />
 </manifest>
